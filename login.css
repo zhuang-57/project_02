@@ -1,3 +1,44 @@
-body {
-    background-color: pink;
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#fullPage{
+    min-width: 1250px;
+}
+.section{
+    min-height: 650px;
+    text-align:center;
+    font-size: 4em;
+    font-family: arial;
+}
+  
+#section1 h1{
+    font-size: 70px;
+    text-align: center;
+    margin: 60px 0px;
+}
+#section img{
+     width: 45%;
+     height: 50%;
+}
+
+#section1{
+    /* background: -webkit-gradient(linear, top left, bottom right, from(#a9e4e6), to(#55a7ca)); */
+    background: -webkit-linear-gradient(#a9e4e6, #55a7ca);
+    background: linear-gradient(#a9e4e6, #55a7ca);
+}
+
+#section2{
+    background: -webkit-linear-gradient(#55a7ca, #26b694);
+    background: linear-gradient(#55a7ca, #26b694);
+}
+
+#section3{
+    background: -webkit-linear-gradient(#26b694, #af8dbc);
+    background: linear-gradient(#26b694, #af8dbc);
+}
+
+#section4{
+    background: -webkit-linear-gradient(#af8dbc, #a25e6c);
+    background: linear-gradient(#af8dbc, #a25e6c);
 }

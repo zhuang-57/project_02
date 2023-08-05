@@ -6,11 +6,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.bootcdn.net/ajax/libs/fullPage.js/4.0.19/fullpage.css" rel="stylesheet">
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/fullPage.js/4.0.19/fullpage.min.js"></script>
+    <!-- 自定义页面滚动效果 -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <!-- 可以设置右侧的滚动条，但是默认情况下无法滚动 -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/jQuery-slimScroll/1.3.8/jquery.slimscroll.min.js"></script>
+    <!-- 可移动效果 -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/move.js/0.5.0/move.min.js"></script>
     <link rel="stylesheet" href="./login.css">
+    
 </head>
-
-<body>
-    <h2>这是我新加的内容---ok</h2>
+    <body>
+        <div id="fullPage">
+            <div class="section active" id="section1">fullpage演示
+                <!-- <img src="./img/1.jpg" alt=""> -->
+            </div>
+            <div class="section" id="section2">第二屏</div>
+            <div class="section" id="section3">
+                <div class="slide">第三屏的第一屏</div>
+                <div class="slide">第三屏的第二屏</div>
+                <div class="slide">第三屏的第三屏</div>
+                <div class="slide">第三屏的第四屏</div>
+            </div>
+            <div class="section "id="section4">第四屏</div>
+        </div>
 </body>
+    <script>
+         
+    $(function() {
+        $("#fullPage").fullpage({
+            sectionsColor : ['#94d9a6', '#fcb9ac', '#a3ccf7', '#c4c2ff'],
+            scrollSpeed:1000,
 
+        });
+    });
+    </script>
+</body>
 </html>
